@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      opacity: {
+        9: "0.09",
+      },
     },
   },
   plugins: [],
