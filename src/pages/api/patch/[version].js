@@ -82,7 +82,7 @@ const patchNotes = {
     itemsChangesTitle: "Изменение предметов",
     itemsChanges: [
       {
-        image: "@/public/itemsImages/arcaneboots.svg",
+        image: "/itemsImages/arcaneboots.png",
         item: "Arcane Boots",
         changes: [
           "Стоимость рецепта увеличена с 375 до 475 золота (общая стоимость увеличилась с 1300 до 1400 золота)",

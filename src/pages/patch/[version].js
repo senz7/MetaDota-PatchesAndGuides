@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function PatchPage() {
   const router = useRouter();
@@ -7,6 +7,23 @@ export default function PatchPage() {
   const [patchNote, setPatchNote] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+
+  const imageRefs = useRef([]);
+
+  const loadImage = () => {
+    imageRefs.current.forEach((img) => {
+      if (img && img.getAttribute("data-src")) {
+        img.src = img.getAttribute("data-src");
+        img.removeAttribute("data-src");
+      }
+    });
+  };
+
+  useEffect(() => {
+    if (patchNote) {
+      loadImage();
+    }
+  }, [patchNote]);
 
   useEffect(() => {
     if (version) {
@@ -65,11 +82,12 @@ export default function PatchPage() {
                   <div>
                     {itemChange.image && (
                       <img
-                        src={itemChange.image}
+                        ref={(el) => (imageRefs.current[index] = el)}
+                        data-src={itemChange.image.replace("@/public", "")} // Убедитесь, что путь корректный
                         alt={itemChange.item}
                         width={64}
                         height={64}
-                        className="rounded-lg"
+                        className="rounded-lg mr-4"
                       />
                     )}
                     <h1>{itemChange.item}</h1>
