@@ -1,5 +1,3 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -52,7 +50,9 @@ export default function PatchPage() {
       <main className="flex-grow container mx-auto px-4 py-8">
         {loading && <div>Loading...</div>}
         {error && <div className="text-red-500">{error}</div>}
-        {!loading && !error && !patchNote && <div>Patch note not found</div>}
+        {!loading && !error && !patchNote && (
+          <div>Patch note not found or doesn't exist</div>
+        )}
         {patchNote && (
           <>
             <h1 className="text-3xl font-bold mb-4">
@@ -60,10 +60,26 @@ export default function PatchPage() {
             </h1>
             <h2 className="text-xl font-semibold mb-2">{patchNote.title}</h2>
             <ul className="list-disc pl-5 mb-4">
-              {patchNote.changes.map((change, index) => (
-                <li key={index} className="mb-2">
-                  {change}
-                </li>
+              {patchNote.itemsChanges.map((itemChange, index) => (
+                <div key={index}>
+                  <div>
+                    {itemChange.image && (
+                      <img
+                        src={itemChange.image}
+                        alt={itemChange.item}
+                        width={64}
+                        height={64}
+                        className="rounded-lg"
+                      />
+                    )}
+                    <h1>{itemChange.item}</h1>
+                  </div>
+                  <ul className="list-disc pl-5 mt-2">
+                    {itemChange.changes.map((change, changeIndex) => (
+                      <li key={changeIndex}>{change}</li>
+                    ))}
+                  </ul>
+                </div>
               ))}
             </ul>
           </>

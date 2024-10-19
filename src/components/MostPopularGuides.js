@@ -12,7 +12,7 @@ export const MostPopularGuides = () => {
             />
             <h3 className="text-lg font-semibold mb-2">
               {["Invoker", "Pudge", "Anti-Mage", "Shadow Fiend"][i - 1]} Guide
-              7.34d
+              7.37d
             </h3>
             <p className="text-gray-600 mb-4">
               Learn advanced techniques and strategies...
