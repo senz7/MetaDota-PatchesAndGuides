@@ -20,7 +20,7 @@ export const QuickLinks = () => {
           href="#"
           className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
         >
-          <Image src={book} width="40" className="text-red-600 mr-3" />
+          <Image src={book} width="35" className="text-red-600 mr-3" />
           <span>Hero Guides</span>
         </a>
         <a
@@ -35,7 +35,7 @@ export const QuickLinks = () => {
           href="#"
           className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
         >
-          <Image src={search} width="35" />
+          <Image src={search} width="35" className=" mr-3" />
           <span>Search Guides</span>
         </a>
       </div>
