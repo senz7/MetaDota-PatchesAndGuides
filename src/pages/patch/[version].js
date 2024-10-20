@@ -77,6 +77,9 @@ export default function PatchPage() {
             </h1>
             <h2 className="text-xl font-semibold mb-2">{patchNote.title}</h2>
             <ul className="list-disc pl-5 mb-4">
+              <h2 className="text-xl font-semibold mb-2">
+                {patchNote.itemsChangesTitle}
+              </h2>
               {patchNote.itemsChanges.map((itemChange, index) => (
                 <div key={index}>
                   <div>
@@ -85,8 +88,8 @@ export default function PatchPage() {
                         ref={(el) => (imageRefs.current[index] = el)}
                         data-src={itemChange.image.replace("@/public", "")} // Убедитесь, что путь корректный
                         alt={itemChange.item}
-                        width={64}
-                        height={64}
+                        width={70}
+                        height={70}
                         className="rounded-lg mr-4"
                       />
                     )}

@@ -91,14 +91,17 @@ const patchNotes = {
         ],
       },
       {
+        image: "/itemsImages/bracer.png",
         item: "Bracer",
         changes: ["Бонусы от этого предмета больше не удваиваются после 25:00"],
       },
       {
+        image: "/itemsImages/crimsonguard.webp",
         item: "Crimson Guard",
         changes: ["Guard: длительность уменьшена с 8 до 7 секунд"],
       },
       {
+        image: "/itemsImages/disperser.png",
         item: "Disperser",
         changes: [
           "Suppress: больше не защищает владельца или его союзников от замедлений",
@@ -106,6 +109,7 @@ const patchNotes = {
         ],
       },
       {
+        image: "/itemsImages/glepnir.webp",
         item: "Glepnir",
         changes: [
           "Стоимость рецепта увеличена с 250 до 550 золота (общая стоимость увеличилась с 5450 до 5750 золота)",
@@ -116,16 +120,19 @@ const patchNotes = {
         ],
       },
       {
+        image: "/itemsImages/guardiangreaves.webp",
         item: "Guardian Greaves",
         changes: [
           "Общая стоимость увеличилась с 4950 до 5050 (из-за увеличения стоимости Arcane Boots)",
         ],
       },
       {
+        image: "/itemsImages/nulltalisman.webp",
         item: "Null Talisman",
         changes: ["Бонусы от этого предмета больше не удваиваются после 25:00"],
       },
       {
+        image: "/itemsImages/pavise.webp",
         item: "Pavise",
         changes: [
           "Protect: здоровье физического барьера уменьшено с 300 до 250",
@@ -134,14 +141,17 @@ const patchNotes = {
         ],
       },
       {
+        image: "/itemsImages/pipeofinsight.webp",
         item: "Pipe of Insight",
         changes: ["Barrier: длительность уменьшена с 10 до 8 секунд"],
       },
       {
+        image: "/itemsImages/ringofbasilius.webp",
         item: "Ring of Basilius",
         changes: ["Бонус к восстановлению маны уменьшен с 0,5 до 0,25"],
       },
       {
+        image: "/itemsImages/solarcrest.webp",
         item: "Solar Crest",
         changes: [
           "Бонус к здоровью уменьшен с 200 до 175",
@@ -151,6 +161,7 @@ const patchNotes = {
         ],
       },
       {
+        image: "/itemsImages/spiritvessel.png",
         item: "Spirit Vessel",
         changes: [
           "Soul Release: снижение восстановления здоровья усилено с 50% до 60%",
@@ -158,6 +169,7 @@ const patchNotes = {
         ],
       },
       {
+        image: "/itemsImages/wraithband.webp",
         item: "Wraith Band",
         changes: ["Бонусы от этого предмета больше не удваиваются после 25:00"],
       },
