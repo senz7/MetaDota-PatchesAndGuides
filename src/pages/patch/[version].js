@@ -63,8 +63,8 @@ export default function PatchPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow container mx-auto px-4 py-8">
+    <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+      <main className="flex-grow container mx-auto px-4 py-8 bg-white">
         {loading && <div>Loading...</div>}
         {error && <div className="text-red-500">{error}</div>}
         {!loading && !error && !patchNote && (
@@ -76,13 +76,42 @@ export default function PatchPage() {
               Patch {patchNote.version}
             </h1>
             <h2 className="text-xl font-semibold mb-2">{patchNote.title}</h2>
+            {patchNote.generalChangesTitle && (
+              <h2 className="text-xl font-semibold mb-2">
+                {patchNote.generalChangesTitle}
+              </h2>
+            )}
+
+            {patchNote.generalChanges && (
+              <ul className="list-disc pl-5 mb-4">
+                {patchNote.generalChanges.map((change, index) => (
+                  <li key={index}>{change}</li>
+                ))}
+              </ul>
+            )}
+
+            {patchNote.generalChangesSubtitle && (
+              <h3 className="text-lg font-medium mb-2">
+                {patchNote.generalChangesSubtitle}
+              </h3>
+            )}
+
+            {patchNote.generalChangesExtension && (
+              <ul className="list-disc pl-5 mb-4">
+                {patchNote.generalChangesExtension.map(
+                  (extensionChange, index) => (
+                    <li key={index}>{extensionChange}</li>
+                  )
+                )}
+              </ul>
+            )}
             <ul className="list-disc pl-5 mb-4">
               <h2 className="text-xl font-semibold mb-2">
                 {patchNote.itemsChangesTitle}
               </h2>
               {patchNote.itemsChanges.map((itemChange, index) => (
                 <div key={index}>
-                  <div>
+                  <div className="flex justify-start items-center mt-5">
                     {itemChange.image && (
                       <img
                         ref={(el) => (imageRefs.current[index] = el)}
