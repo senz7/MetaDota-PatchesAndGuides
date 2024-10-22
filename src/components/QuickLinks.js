@@ -12,31 +12,36 @@ export const QuickLinks = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <a
           href="#"
-          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
+          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50 dark:bg-gray-700"
         >
-          <Image src={file} width="30" className="text-red-600 mr-3" alt="" />
+          <Image src={file} width="30" className="fill-red-900 mr-3" alt="" />
           <span>Latest Patch Notes</span>
         </a>
         <a
           href="#"
-          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
+          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50 dark:bg-gray-700"
         >
-          <Image src={book} width="35" className="text-red-600 mr-3" alt="" />
+          <Image src={book} width="35" className="fill-red-900 mr-3" alt="" />
           <span>Hero Guides</span>
         </a>
         <a
           href="#"
-          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
+          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50 dark:bg-gray-700"
         >
-          <Image src={trendingUp} width="35" className=" mr-3" alt="" />
+          <Image
+            src={trendingUp}
+            width="35"
+            className="fill-red-900 mr-3"
+            alt=""
+          />
           <span>Meta Analysis</span>
         </a>
 
         <a
           href="#"
-          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
+          className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50 dark:bg-gray-700"
         >
-          <Image src={search} width="35" className=" mr-3" alt="" />
+          <Image src={search} width="35" className="fill-red-900 mr-3" alt="" />
           <span>Search Guides</span>
         </a>
       </div>
