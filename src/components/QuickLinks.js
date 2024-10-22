@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import book from "../svg/book.svg";
 import file from "../svg/file.svg";
 import search from "../svg/search.svg";
@@ -13,21 +14,21 @@ export const QuickLinks = () => {
           href="#"
           className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
         >
-          <Image src={file} width="30" className="text-red-600 mr-3" />
+          <Image src={file} width="30" className="text-red-600 mr-3" alt="" />
           <span>Latest Patch Notes</span>
         </a>
         <a
           href="#"
           className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
         >
-          <Image src={book} width="35" className="text-red-600 mr-3" />
+          <Image src={book} width="35" className="text-red-600 mr-3" alt="" />
           <span>Hero Guides</span>
         </a>
         <a
           href="#"
           className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
         >
-          <Image src={trendingUp} width="35" className=" mr-3" />
+          <Image src={trendingUp} width="35" className=" mr-3" alt="" />
           <span>Meta Analysis</span>
         </a>
 
@@ -35,7 +36,7 @@ export const QuickLinks = () => {
           href="#"
           className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-gray-50"
         >
-          <Image src={search} width="35" className=" mr-3" />
+          <Image src={search} width="35" className=" mr-3" alt="" />
           <span>Search Guides</span>
         </a>
       </div>

@@ -53,7 +53,9 @@ export default function PatchPage() {
   }
 
   if (error) {
-    return <div className="container mx-auto px-4 py-8">{error}</div>;
+    return (
+      <div className="container mx-auto px-4 py-8 text-red-500">{error}</div>
+    );
   }
 
   if (!patchNote) {
@@ -63,77 +65,99 @@ export default function PatchPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
-      <main className="flex-grow container mx-auto px-4 py-8 bg-white">
-        {loading && <div>Loading...</div>}
-        {error && <div className="text-red-500">{error}</div>}
-        {!loading && !error && !patchNote && (
-          <div>Patch note not found or doesn't exist</div>
-        )}
-        {patchNote && (
-          <>
-            <h1 className="text-3xl font-bold mb-4">
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <main className="container mx-auto px-4 py-8">
+        <div className="w-full max-w-4xl mx-auto bg-white rounded-lg border border-gray-200 shadow-sm">
+          <header className="flex items-center pl-6 pb-6 pt-6">
+            <h1 className="text-primary text-3xl font-semibold leading-none tracking-tight pr-2">
               Patch {patchNote.version}
             </h1>
-            <h2 className="text-xl font-semibold mb-2">{patchNote.title}</h2>
+            <a className="text-xl font-semibold">|</a>
+            <p className="text-3xl font-semibold text-muted-foreground pl-2">
+              {patchNote.title}
+            </p>
+          </header>
+
+          <div className="p-6 pt-0">
             {patchNote.generalChangesTitle && (
-              <h2 className="text-xl font-semibold mb-2">
-                {patchNote.generalChangesTitle}
-              </h2>
+              <>
+                <h2 className="text-2xl font-semibold mb-4 text-secondary">
+                  {patchNote.generalChangesTitle}
+                </h2>
+              </>
             )}
 
             {patchNote.generalChanges && (
-              <ul className="list-disc pl-5 mb-4">
+              <ul className="list-disc pl-5 mb-6 space-y-2">
                 {patchNote.generalChanges.map((change, index) => (
-                  <li key={index}>{change}</li>
+                  <li key={index} className="text-lg">
+                    {" "}
+                    {/* Используем индекс здесь, если у вас нет уникального идентификатора */}
+                    {change}
+                  </li>
                 ))}
               </ul>
             )}
 
             {patchNote.generalChangesSubtitle && (
-              <h3 className="text-lg font-medium mb-2">
+              <h3 className="text-xl font-medium mb-4 text-secondary">
                 {patchNote.generalChangesSubtitle}
               </h3>
             )}
 
             {patchNote.generalChangesExtension && (
-              <ul className="list-disc pl-5 mb-4">
+              <ul className="list-disc pl-5 mb-6 space-y-2">
                 {patchNote.generalChangesExtension.map(
                   (extensionChange, index) => (
-                    <li key={index}>{extensionChange}</li>
+                    <li key={index} className="text-lg">
+                      {" "}
+                      {/* Используем индекс здесь, если у вас нет уникального идентификатора */}
+                      {extensionChange}
+                    </li>
                   )
                 )}
               </ul>
             )}
-            <ul className="list-disc pl-5 mb-4">
-              <h2 className="text-xl font-semibold mb-2">
-                {patchNote.itemsChangesTitle}
-              </h2>
+            <h2 className="text-2xl font-semibold mb-4 text-secondary">
+              {patchNote.itemsChangesTitle}
+            </h2>
+            <a className="my-4 h-[1px] bg-gray-200 border-0 dark:bg-gray-700" />
+
+            <ul className="space-y-8">
               {patchNote.itemsChanges.map((itemChange, index) => (
-                <div key={index}>
-                  <div className="flex justify-start items-center mt-5">
+                <li
+                  key={itemChange.id || index} // Используем itemChange.id как уникальный ключ, если он есть
+                  className="border-b border-gray-200 pb-4 last:border-b-0"
+                >
+                  <div className="flex items-center space-x-4 mb-2">
                     {itemChange.image && (
                       <img
                         ref={(el) => (imageRefs.current[index] = el)}
-                        data-src={itemChange.image.replace("@/public", "")} // Убедитесь, что путь корректный
+                        data-src={itemChange.image.replace("@/public", "")}
                         alt={itemChange.item}
-                        width={70}
-                        height={70}
-                        className="rounded-lg mr-4"
+                        width={64}
+                        height={64}
+                        className="rounded-lg"
                       />
                     )}
-                    <h1>{itemChange.item}</h1>
+                    <h3 className="text-xl font-semibold text-primary">
+                      {itemChange.item}
+                    </h3>
                   </div>
-                  <ul className="list-disc pl-5 mt-2">
+                  <ul className="list-disc pl-5 space-y-1">
                     {itemChange.changes.map((change, changeIndex) => (
-                      <li key={changeIndex}>{change}</li>
+                      <li key={changeIndex} className="text-lg">
+                        {" "}
+                        {/* Если у вас нет уникального идентификатора для изменений */}
+                        {change}
+                      </li>
                     ))}
                   </ul>
-                </div>
+                </li>
               ))}
             </ul>
-          </>
-        )}
+          </div>
+        </div>
       </main>
     </div>
   );

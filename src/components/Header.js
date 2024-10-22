@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { ThemeToggle } from "@/UI/ThemeToggle";
+
 export const Header = () => {
   return (
     <header className="bg-red-700 text-white shadow-lg ">
@@ -26,6 +28,7 @@ export const Header = () => {
           <Link href="/sign_up" className="hover:text-gray-200">
             Sign Up
           </Link>
+          {/* <ThemeToggle /> */}
         </nav>
       </div>
     </header>
