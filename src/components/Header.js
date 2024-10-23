@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@/components/ui/ThemeProvider";
 
 export const Header = () => {
   const { theme, toggleTheme } = useTheme();
