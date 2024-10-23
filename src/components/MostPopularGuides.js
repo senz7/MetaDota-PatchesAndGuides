@@ -6,7 +6,7 @@ export const MostPopularGuides = () => {
         {[1, 2, 3, 4].map((i) => (
           <div
             key={i}
-            className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-700 transition-colors duration-500 ease-in-out"
+            className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-700 transition-colors duration-400 ease-in-out"
           >
             <img
               src={`https://placehold.co/150x250/7F7F7F/7F7F7F`}

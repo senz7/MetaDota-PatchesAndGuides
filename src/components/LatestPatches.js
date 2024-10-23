@@ -39,7 +39,7 @@ export const LatestPatches = () => {
             Read More
           </a>
         </div>
-        <div className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-700 transition-colors duration-500 ease-in-out">
+        <div className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-700 transition-colors duration-400 ease-in-out">
           <h3 className="text-xl font-semibold mb-2">Patch 7.37d</h3>
           <p className="text-gray-600 mb-4 dark:text-gray-100">
             Major gameplay changes and hero balancing...

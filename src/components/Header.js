@@ -7,7 +7,7 @@ export const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="bg-red-700 dark:bg-red-900 text-white transition-colors duration-500 ease-in-out">
+    <header className="bg-red-700 dark:bg-red-900 text-white transition-colors duration-400 ease-in-out">
       <div className="flex items-center justify-between container mx-auto px-4 py-4">
         <Link href="/" className="text-3xl font-bold">
           MetaDota
