@@ -65,9 +65,9 @@ export default function PatchPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100">
+    <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 transition-colors duration-500 ease-in-out">
       <main className="container mx-auto px-4 py-8">
-        <div className="w-full max-w-4xl mx-auto bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 shadow-sm">
+        <div className="w-full max-w-4xl mx-auto bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 transition-colors duration-500 ease-in-out">
           <header className="flex items-center pl-6 pb-6 pt-6">
             <h1 className="text-primary text-3xl font-semibold leading-none tracking-tight pr-2">
               Patch {patchNote.version}

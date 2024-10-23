@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="bg-slate-500  dark:bg-slate-900 text-white duration-200">
+    <footer className="bg-slate-500  dark:bg-slate-900 text-white transition-colors duration-500 ease-in-out">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p>&copy; 2024 MetaDota. All rights reserved.</p>
