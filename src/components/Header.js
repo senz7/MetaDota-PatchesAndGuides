@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useTheme } from "../hooks/useTheme";
+
+import { useTheme } from "@/hooks/useTheme";
 
 export const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -13,7 +14,7 @@ export const Header = () => {
           MetaDota
         </Link>
         <nav className="hidden md:flex space-x-6">
-          <Link href="/dota_patches" className="hover:text-gray-200 ">
+          <Link href="/dota_patches" className="hover:text-gray-200">
             Patches
           </Link>
           <Link href="/dota_guides" className="hover:text-gray-200">
