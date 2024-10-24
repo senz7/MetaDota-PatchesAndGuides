@@ -70,6 +70,49 @@ const patchNotes = {
       "Witch Doctor — способность Paralyzing Cask",
       "Zeus — способность Arc Lightning (молнии от атак с Aghanim's Shard не блокируются и не отражаются)",
     ],
+    neutralCripsChangesTitle: "Изменения нейтральных крипов",
+    neutralCripsChanges: [
+      {
+        image: "/neutralCripsImages/storm_harpy.webp",
+        crip: "Штормовая гарпия",
+        changes: [
+          "Больше не применяет Chain Lightning, если во время отвода её атакуют крипы с линии",
+        ],
+      },
+      {
+        image: "/neutralCripsImages/giant_wolf.webp",
+        crip: "Гигантский волк",
+        changes: ["Intimidate: уменьшение урона от атак усилено с 50% до 60%"],
+      },
+      {
+        image: "/neutralCripsImages/bear_smasher.webp",
+        crip: "Медведемон-крушитель",
+        changes: [
+          "Death Throe: Power: бонус к базовому урону от атак увеличен с 50% до 60%",
+        ],
+      },
+      {
+        image: "/neutralCripsImages/medvedemon.webp",
+        crip: "Медведемон",
+        changes: [
+          "Death Throe: Rush: дополнительная скорость атаки увеличена со 100 до 120",
+        ],
+      },
+      {
+        image: "/neutralCripsImages/ancient_stone_golem.webp",
+        crip: "Древний гранитный голем",
+        changes: [
+          "Granite Aura: дополнительное здоровье увеличено с 15/16/17/19% до 16/17/18/19%",
+        ],
+      },
+      {
+        image: "/neutralCripsImages/ancient_stone_golem.webp",
+        crip: "Древний каменный голем",
+        changes: [
+          "Weakening Aura: снижение брони усилено с 2/3/4/5 до 3/4/5/6",
+        ],
+      },
+    ],
     itemsChangesTitle: "Изменение предметов",
     itemsChanges: [
       {
