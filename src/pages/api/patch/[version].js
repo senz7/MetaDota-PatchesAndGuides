@@ -380,15 +380,66 @@ const patchNotes = {
                 image:
                   "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
                 abilityTitle: "Borrowed time",
-                abilityChanges:
+                abilityChanges: [
                   "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+                ],
               },
             ],
             talentsChanges: [
               {
                 image: "/heroesAbilitiesImage/talents.svg",
-                talentChanges:
+                talentChanges: [
                   "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        image: "/heroesImages/anti_mage.webp",
+        hero: "Anti-Mage",
+        baseAttributeChanges: [
+          "Базовое восстановление здоровья увеличено с 0,75 до 1",
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Persecutor",
+                innateAbility: [
+                  "Новая врождённая способность. Пассивная, улучшается вместе с Mana Void.",
+                  "Атаки замедляют жертв в зависимости от недостающей у них маны. Замедление в 12,5/15/17,5/20% начинает действовать при 50% маны и достигает 25/30/35/40%, когда мана отсутствует полностью. Длительность замедления: 0,75 секунды.",
+                ],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/anti_mage/antimage_mana_break.png",
+                abilityTitle: "Mana Break",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Сжигание маны за атаку изменено с 16/23/30/37/44 на 25/30/35/40",
+                  "Сжигаемая доля от макс. маны изменена с 0,8/1,6/2,4/3,2/4% на 1,6/2,4/3,2/4%",
+                ],
+              },
+              {
+                image: "/heroesAbilitiesImages/anti_mage/antimage_blink.png",
+                abilityTitle: "Blink",
+                abilityChanges: [
+                  "Изменено улучшение от Aghanim's Scepter. Уменьшает перезарядку этой способности на 1 секунду. В течение 5 секунд после её применения следующая атака с эффектом Mana Break дополнительно сожжёт 20% от максимальной маны и на 6 секунд запретит жертве восстанавливать ману (этот эффект нельзя развеять).",
+                ],
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImage/talents.svg",
+                talentChanges: [
+                  "Талант 15 уровня: «Mana Break замедляет жертв без маны на 40%» заменено на «+10% к макс. замедлению от Persecutor»",
+                  "Талант 20 уровня: «–1 сек. перезарядки Blink» заменено на «+0,7 сек. оглушения от Mana Void»",
+                ],
               },
             ],
           },
