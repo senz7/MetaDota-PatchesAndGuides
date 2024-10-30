@@ -26,6 +26,7 @@ const patchNotes = {
       "Обновление правил истощения: способности, отключаемые истощением, теперь помечены специальными пояснениями.",
       "Полностью отключаются такие способности, как Alchemist — Greevil's Greed, Bloodseeker — Thirst, Bounty Hunter — Jinada, Faceless Void — Distortion Field, и другие. Частично отключаются способности таких героев, как Chaos Knight — Phantasmagoria, Ember Spirit — Immolation, Lifestealer — Feast, и другие. Некоторые способности, такие как Lich — Death Charge, больше не отключаются.",
     ],
+
     generalChangesSubtitle: "Блокирование и отражение способностей",
     generalChangesExtension: [
       "Способности, применяемые при атаке, больше нельзя заблокировать или отразить. Изменилось поведение следующих способностей:",
@@ -70,6 +71,7 @@ const patchNotes = {
       "Witch Doctor — способность Paralyzing Cask",
       "Zeus — способность Arc Lightning (молнии от атак с Aghanim's Shard не блокируются и не отражаются)",
     ],
+
     neutralCripsChangesTitle: "Изменения нейтральных крипов",
     neutralCripsChanges: [
       {
@@ -113,6 +115,7 @@ const patchNotes = {
         ],
       },
     ],
+
     itemsChangesTitle: "Изменение предметов",
     itemsChanges: [
       {
@@ -256,11 +259,191 @@ const patchNotes = {
         ],
       },
     ],
+
+    neutralItemsChangesTitle: "Изменения нейтральных предметов",
+    neutralItemsChanges: [
+      {
+        image: "neutralItemsImags/first_tier/trusty_shovel.webp",
+        item: "Trusty shovel",
+        changes: [
+          "Dig: теперь не перезаряжается, если предмет не находится в ячейке нейтрального предмета",
+          "Dig: при использовании в реке всегда выкапывается руна воды",
+        ],
+      },
+      {
+        image: "neutralItemsImags/first_tier/fairys_trinket.webp",
+        item: "Fairy's Trinket",
+        changes: ["Предмет упразднён"],
+      },
+      {
+        image: "neutralItemsImags/first_tier/ironwood_tree.webp",
+        item: "Ironwood Tree",
+        changes: [
+          "Возвращённый нейтральный предмет 1 разряда",
+          "Даёт +5 ко всем атрибутам. Активное заклинание: Plant Tree. Сажает в указанное место маленькое счастливое деревце, которое исчезнет через 20 секунд. Перезарядка: 15 секунд.",
+        ],
+      },
+      {
+        image: "neutralItemsImags/first_tier/pig_pole.webp",
+        item: "Pig Pole",
+        changes: [
+          "Бонус ко всем атрибутам уменьшен с 5 до 4",
+          "Pig, Out!: бонус к скорости передвижения увеличен с 10% до 15%",
+        ],
+      },
+      {
+        image: "neutralItemsImags/second_tier/iron_talon.webp",
+        item: "Iron Talon",
+        changes: [
+          "Возвращённый нейтральный предмет 2 разряда",
+          "Даёт +20 к скорости атаки и +4 к броне. Активное заклинание: Chop. Наносит неподконтрольному игрокам вражескому существу урон в размере 80% от его текущего запаса здоровья. При применении на дерево мгновенно его уничтожает. Перезарядка: 20 секунд. Перезарядка после применения на дерево: 4 секунды.",
+        ],
+      },
+      {
+        image: "neutralItemsImags/second_tier/philosophers_stone",
+        item: "Philosopher's Stone",
+        changes: [
+          "Теперь имеет 750 зарядов. Тратит заряд каждый раз, когда даёт владельцу золото. Когда зарядов не останется, предмет исчезнет, а его владелец получит 375 золота.",
+        ],
+      },
+      {
+        image: "neutralItemsImags/second_tier/pupils_gift.webp",
+        item: "Pupil's Gift",
+        changes: [
+          "Бонус к атрибутам для универсальных героев увеличен с 7 до 8",
+        ],
+      },
+      {
+        image: "neutralItemsImags/second_tier/vambrace.webp",
+        item: "Vambrace",
+        changes: [
+          "Теперь это предмет 3 разряда",
+          "Бонус к основному атрибуту увеличен с 8 до 10",
+          "Бонус к остальным атрибутам увеличен с 2 до 4",
+          "Бонус к сопротивлению магии, когда выбрана сила, увеличен с 8% до 10%",
+          "Бонус к скорости атаки, когда выбрана ловкость, увеличен с 10 до 15",
+          "Бонус к урону от заклинаний, когда выбран интеллект, увеличен с 6% до 8%",
+        ],
+      },
+      {
+        image: "neutralItemsImags/third_tier/ogre_seal_totem.webp",
+        item: "Ogre Seal Totem",
+        changes: [
+          "Теперь это предмет 4 разряда",
+          "Бонус к силе увеличен с 10 до 12",
+          "Ogre Seal Flop: перезарядка уменьшена с 40 до 35 секунд",
+          "Ogre Seal Flop: урон увеличен со 150 до 250",
+          "Ogre Seal Flop: теперь во время скачков герой может менять направление движение, но с уменьшенной скоростью поворота",
+        ],
+      },
+      {
+        image: "neutralItemsImags/fourth_tier/martyrs_plate.webp",
+        item: "Martyr's Plate",
+        changes: ["Предмет упразднён"],
+      },
+    ],
+
+    heroesChangesTitle: "Изменения героев",
+    heroesChanges: [
+      {
+        image: "/heroesImages/abaddon.webp",
+        hero: "Abaddon",
+        baseAttributeChanges: ["Способность Font of Avernus удалена из игры"],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: "",
+            },
+            secondAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: "",
+            },
+          },
+        ],
+        abilitiesHeroChanges: {
+          innateChanges: [
+            {
+              image: "/heroesAbilitiesImages/innate_icon.png",
+              innateTitle: "Withering Mist",
+              innateAbility: [
+                "Новая врождённая способность. Пассивная, не улучшается.",
+                "Нанеся врагу урон, герой на 5 секунд накладывает на него отрицательный эффект, который уменьшает восстановление здоровья, лечение и любой вампиризм на 35%, если здоровье жертвы ниже 40%",
+              ],
+            },
+          ],
+          abilitiesChanges: [
+            {
+              image: "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
+              abilityTitle: "Borrowed time",
+              abilityChanges:
+                "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+            },
+          ],
+        },
+        talentsChanges: [
+          {
+            image: "/heroesAbilitiesImage/talents.svg",
+            talentChanges:
+              "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+          },
+        ],
+      },
+      {
+        image: "/heroesImages/abaddon.webp",
+        hero: "Abaddon",
+        baseAttributeChanges: ["Способность Font of Avernus удалена из игры"],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: "",
+            },
+            secondAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: "",
+            },
+          },
+        ],
+        abilitiesHeroChanges: {
+          innateChanges: [
+            {
+              image: "/heroesAbilitiesImages/innate_icon.png",
+              innateTitle: "Withering Mist",
+              innateAbility: [
+                "Новая врождённая способность. Пассивная, не улучшается.",
+                "Нанеся врагу урон, герой на 5 секунд накладывает на него отрицательный эффект, который уменьшает восстановление здоровья, лечение и любой вампиризм на 35%, если здоровье жертвы ниже 40%",
+              ],
+            },
+          ],
+          abilitiesChanges: [
+            {
+              image: "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
+              abilityTitle: "Borrowed time",
+              abilityChanges:
+                "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+            },
+          ],
+        },
+        talentsChanges: [
+          {
+            image: "/heroesAbilitiesImage/talents.svg",
+            talentChanges:
+              "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+          },
+        ],
+      },
+    ],
   },
+
   "7.37b": {
     version: "7.37b",
     title: "Обновление баланса",
-    itemsChangesTitle: "Изменение предметов",
+    itemsChangesTitle: "Изменения предметов",
     itemsChanges: [
       {
         image: "/itemsImages/glepnir.webp",
@@ -301,6 +484,7 @@ const patchNotes = {
       },
     ],
   },
+
   "7.37c": {
     version: "7.37c",
     title: "Обновление баланса",
@@ -346,6 +530,7 @@ const patchNotes = {
       },
     ],
   },
+
   "7.37d": {
     version: "7.37d",
     title: "Обновление баланса",

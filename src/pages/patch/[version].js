@@ -1,6 +1,10 @@
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
+import GeneralChanges from "./GeneralChanges";
+import ItemChanges from "./ItemChanges";
+import NeutralCripsChanges from "./NeutralCripsChanges";
+
 export default function PatchPage() {
   const router = useRouter();
   const { version } = router.query;
@@ -68,143 +72,25 @@ export default function PatchPage() {
     <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100 transition-colors duration-500 ease-in-out">
       <main className="container mx-auto px-4 py-8">
         <div className="w-full max-w-4xl mx-auto bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 transition-colors duration-500 ease-in-out">
-          <header className="flex items-center pl-6 pb-6 pt-6">
+          <div className="flex items-center pl-6 pb-6 pt-6">
             <h1 className="text-primary text-3xl font-semibold leading-none tracking-tight pr-2">
               Patch {patchNote.version}
             </h1>
-            <a className="text-xl font-semibold">|</a>
+            <span className="text-xl font-semibold">|</span>
             <p className="text-3xl font-semibold text-muted-foreground pl-2">
               {patchNote.title}
             </p>
-          </header>
+          </div>
 
           <div className="p-6 pt-0">
-            {patchNote.generalChangesTitle && (
-              <>
-                <h2 className="text-2xl font-semibold mb-4 text-secondary">
-                  {patchNote.generalChangesTitle}
-                </h2>
-              </>
-            )}
-
-            {patchNote.generalChanges && (
-              <ul className="list-disc pl-5 mb-6 space-y-2">
-                {patchNote.generalChanges.map((change, index) => (
-                  <li key={index} className="text-lg">
-                    {" "}
-                    {change}
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {patchNote.generalChangesSubtitle && (
-              <h3 className="text-xl font-medium mb-4 text-secondary">
-                {patchNote.generalChangesSubtitle}
-              </h3>
-            )}
-
-            {patchNote.generalChangesExtension && (
-              <ul className="list-disc pl-5 mb-6 space-y-2">
-                {patchNote.generalChangesExtension.map(
-                  (extensionChange, index) => (
-                    <li key={index} className="text-lg">
-                      {" "}
-                      {extensionChange}
-                    </li>
-                  )
-                )}
-              </ul>
-            )}
-
-            {patchNote.neutralCripsChanges &&
-              Array.isArray(patchNote.neutralCripsChanges) &&
-              patchNote.neutralCripsChanges.length > 0 && (
-                <>
-                  <h2 className="text-2xl font-semibold mb-4 text-secondary">
-                    {patchNote.neutralCripsChangesTitle ||
-                      "Neutral Crips Changes"}
-                  </h2>
-                  <a className="my-4 h-[1px] bg-gray-200 border-0 dark:bg-gray-700" />
-                  <ul className="space-y-8">
-                    {patchNote.neutralCripsChanges.map(
-                      (neutralChange, index) => (
-                        <li
-                          key={neutralChange.id || index}
-                          className="border-b border-gray-200 pb-4 last:border-b-0"
-                        >
-                          <div className="flex items-center space-x-4 mb-2">
-                            {neutralChange.image && (
-                              <img
-                                src={neutralChange.image}
-                                alt={neutralChange.crip}
-                                width={64}
-                                height={64}
-                                className="rounded-lg"
-                                loading="lazy"
-                              />
-                            )}
-                            <h3 className="text-xl font-semibold text-primary">
-                              {neutralChange.crip}
-                            </h3>
-                          </div>
-                          {neutralChange.changes &&
-                            Array.isArray(neutralChange.changes) &&
-                            neutralChange.changes.length > 0 && (
-                              <ul className="list-disc pl-5 space-y-1">
-                                {neutralChange.changes.map(
-                                  (change, changeIndex) => (
-                                    <li key={changeIndex} className="text-lg">
-                                      {change}
-                                    </li>
-                                  )
-                                )}
-                              </ul>
-                            )}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </>
-              )}
+            <GeneralChanges patchNote={patchNote} />
+            <NeutralCripsChanges patchNote={patchNote} />
+            <ItemChanges patchNote={patchNote} />
 
             <h2 className="text-2xl font-semibold mb-4 text-secondary">
-              {patchNote.itemsChangesTitle}
+              {patchNote.heroesChangesTitle}
             </h2>
-            <a className="my-4 h-[1px] bg-gray-200 border-0 dark:bg-gray-700" />
-
-            <ul className="space-y-8">
-              {patchNote.itemsChanges.map((itemChange, index) => (
-                <li
-                  key={itemChange.id || index}
-                  className="border-b border-gray-200 pb-4 last:border-b-0 "
-                >
-                  <div className="flex items-center space-x-4 mb-2">
-                    {itemChange.image && (
-                      <img
-                        ref={(el) => (imageRefs.current[index] = el)}
-                        data-src={itemChange.image.replace("@/public", "")}
-                        alt={itemChange.item}
-                        width={64}
-                        height={64}
-                        className="rounded-lg"
-                      />
-                    )}
-                    <h3 className="text-xl font-semibold text-primary">
-                      {itemChange.item}
-                    </h3>
-                  </div>
-                  <ul className="list-disc pl-5 space-y-1 pb-6">
-                    {itemChange.changes.map((change, changeIndex) => (
-                      <li key={changeIndex} className="text-lg">
-                        {" "}
-                        {change}
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
+            <hr className="my-4 h-[1px] bg-gray-200 border-0 dark:bg-gray-700" />
           </div>
         </div>
       </main>
