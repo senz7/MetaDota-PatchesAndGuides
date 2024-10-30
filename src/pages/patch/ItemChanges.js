@@ -1,21 +1,4 @@
-import { useEffect, useRef } from "react";
-
 export default function ItemChanges({ patchNote }) {
-  const imageRefs = useRef([]);
-
-  const loadImage = () => {
-    imageRefs.current.forEach((img) => {
-      if (img && img.getAttribute("data-src")) {
-        img.src = img.getAttribute("data-src");
-        img.removeAttribute("data-src");
-      }
-    });
-  };
-
-  useEffect(() => {
-    loadImage();
-  }, []);
-
   return (
     <>
       <h2 className="text-2xl font-semibold mb-4 text-secondary">
@@ -32,8 +15,7 @@ export default function ItemChanges({ patchNote }) {
             <div className="flex items-center space-x-4 mb-2">
               {itemChange.image && (
                 <img
-                  ref={(el) => (imageRefs.current[index] = el)}
-                  data-src={itemChange.image.replace("@/public", "")}
+                  src={itemChange.image}
                   alt={itemChange.item}
                   width={64}
                   height={64}

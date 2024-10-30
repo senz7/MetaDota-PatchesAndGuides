@@ -353,87 +353,44 @@ const patchNotes = {
           {
             firstAspect: {
               image: "",
-              aspectTitle: "",
-              aspectAbility: "",
+              aspectTitle: [""],
+              aspectAbility: [""],
             },
             secondAspect: {
               image: "",
-              aspectTitle: "",
-              aspectAbility: "",
+              aspectTitle: [""],
+              aspectAbility: [],
             },
           },
         ],
-        abilitiesHeroChanges: {
-          innateChanges: [
-            {
-              image: "/heroesAbilitiesImages/innate_icon.png",
-              innateTitle: "Withering Mist",
-              innateAbility: [
-                "Новая врождённая способность. Пассивная, не улучшается.",
-                "Нанеся врагу урон, герой на 5 секунд накладывает на него отрицательный эффект, который уменьшает восстановление здоровья, лечение и любой вампиризм на 35%, если здоровье жертвы ниже 40%",
-              ],
-            },
-          ],
-          abilitiesChanges: [
-            {
-              image: "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
-              abilityTitle: "Borrowed time",
-              abilityChanges:
-                "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
-            },
-          ],
-        },
-        talentsChanges: [
+        abilitiesHeroChanges: [
           {
-            image: "/heroesAbilitiesImage/talents.svg",
-            talentChanges:
-              "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
-          },
-        ],
-      },
-      {
-        image: "/heroesImages/abaddon.webp",
-        hero: "Abaddon",
-        baseAttributeChanges: ["Способность Font of Avernus удалена из игры"],
-        aspectsChanges: [
-          {
-            firstAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: "",
-            },
-            secondAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: "",
-            },
-          },
-        ],
-        abilitiesHeroChanges: {
-          innateChanges: [
-            {
-              image: "/heroesAbilitiesImages/innate_icon.png",
-              innateTitle: "Withering Mist",
-              innateAbility: [
-                "Новая врождённая способность. Пассивная, не улучшается.",
-                "Нанеся врагу урон, герой на 5 секунд накладывает на него отрицательный эффект, который уменьшает восстановление здоровья, лечение и любой вампиризм на 35%, если здоровье жертвы ниже 40%",
-              ],
-            },
-          ],
-          abilitiesChanges: [
-            {
-              image: "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
-              abilityTitle: "Borrowed time",
-              abilityChanges:
-                "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
-            },
-          ],
-        },
-        talentsChanges: [
-          {
-            image: "/heroesAbilitiesImage/talents.svg",
-            talentChanges:
-              "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Withering Mist",
+                innateAbility: [
+                  "Новая врождённая способность. Пассивная, не улучшается.",
+                  "Нанеся врагу урон, герой на 5 секунд накладывает на него отрицательный эффект, который уменьшает восстановление здоровья, лечение и любой вампиризм на 35%, если здоровье жертвы ниже 40%",
+                ],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
+                abilityTitle: "Borrowed time",
+                abilityChanges:
+                  "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImage/talents.svg",
+                talentChanges:
+                  "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
+              },
+            ],
           },
         ],
       },

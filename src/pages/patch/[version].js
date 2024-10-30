@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import GeneralChanges from "./GeneralChanges";
 import ItemChanges from "./ItemChanges";
 import NeutralCripsChanges from "./NeutralCripsChanges";
+import HeroesChanges from "./HeroesChanges";
 
 export default function PatchPage() {
   const router = useRouter();
@@ -86,10 +87,7 @@ export default function PatchPage() {
             <GeneralChanges patchNote={patchNote} />
             <NeutralCripsChanges patchNote={patchNote} />
             <ItemChanges patchNote={patchNote} />
-
-            <h2 className="text-2xl font-semibold mb-4 text-secondary">
-              {patchNote.heroesChangesTitle}
-            </h2>
+            <HeroesChanges patchNote={patchNote} />
             <hr className="my-4 h-[1px] bg-gray-200 border-0 dark:bg-gray-700" />
           </div>
         </div>
