@@ -344,25 +344,12 @@ const patchNotes = {
     ],
 
     heroesChangesTitle: "Изменения героев",
+    // Abaddon
     heroesChanges: [
       {
         image: "/heroesImages/abaddon.webp",
         hero: "Abaddon",
         baseAttributeChanges: ["Способность Font of Avernus удалена из игры"],
-        aspectsChanges: [
-          {
-            firstAspect: {
-              image: "",
-              aspectTitle: [""],
-              aspectAbility: [""],
-            },
-            secondAspect: {
-              image: "",
-              aspectTitle: [""],
-              aspectAbility: [],
-            },
-          },
-        ],
         abilitiesHeroChanges: [
           {
             innateChanges: [
@@ -379,7 +366,7 @@ const patchNotes = {
               {
                 image:
                   "/heroesAbilitiesImages/abaddon/abaddon_borrowed_time.png",
-                abilityTitle: "Borrowed time",
+                abilityTitle: "Borrowed Time",
                 abilityChanges: [
                   "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
                 ],
@@ -387,7 +374,7 @@ const patchNotes = {
             ],
             talentsChanges: [
               {
-                image: "/heroesAbilitiesImage/talents.svg",
+                image: "/heroesAbilitiesImages/talents_icon.png",
                 talentChanges: [
                   "Перезарядка увеличена с 80/70/60 до 90/80/70 секунд",
                 ],
@@ -396,11 +383,53 @@ const patchNotes = {
           },
         ],
       },
+
+      // Anti-Mage
       {
         image: "/heroesImages/anti_mage.webp",
         hero: "Anti-Mage",
         baseAttributeChanges: [
           "Базовое восстановление здоровья увеличено с 0,75 до 1",
+        ],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+            secondAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+          },
         ],
         abilitiesHeroChanges: [
           {
@@ -435,11 +464,444 @@ const patchNotes = {
             ],
             talentsChanges: [
               {
-                image: "/heroesAbilitiesImage/talents.svg",
+                image: "/heroesAbilitiesImages/talents_icon.png",
                 talentChanges: [
                   "Талант 15 уровня: «Mana Break замедляет жертв без маны на 40%» заменено на «+10% к макс. замедлению от Persecutor»",
                   "Талант 20 уровня: «–1 сек. перезарядки Blink» заменено на «+0,7 сек. оглушения от Mana Void»",
                 ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Arc warden
+      {
+        image: "/heroesImages/arc_warden.webp",
+        hero: "Arc Warden",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/arc_warden/arc_warden_alt.png",
+              aspectTitle: "Order",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image:
+                      "/heroesAbilitiesImages/arc_warden/arc_warden_flux.png",
+                    title: "Flux",
+                    changes:
+                      "Замедление передвижения увеличено с 14/21/28/35% до 15/22/30/39%",
+                  },
+                  secondAbility: {
+                    image:
+                      "/heroesAbilitiesImages/arc_warden/arc_warden_spark_wraith.png",
+                    title: "Spark Wraith",
+                    changes:
+                      "Длительность замедления увеличена с 0,4/0,5/0,6/0,7 до 0,6/0,8/1/1,2 секунды",
+                  },
+                },
+              ],
+            },
+            secondAspect: {
+              image: "/heroesAbilitiesImages/arc_warden/arc_warden.png",
+              aspectTitle: "Disorder",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image:
+                      "/heroesAbilitiesImages/arc_warden/arc_warden_flux.png",
+                    title: "Flux",
+                    changes:
+                      "Замедление передвижения уменьшено с 6/10/14/18% до 5/8/11/14%",
+                  },
+                  secondAbility: {
+                    image:
+                      "/heroesAbilitiesImages/arc_warden/arc_warden_spark_wraith.png",
+                    title: "Spark Wraith",
+                    changes:
+                      "Длительность замедления уменьшена с 0,6/0,8/1/1,2 до 0,4/0,5/0,6/0,7 секунды",
+                  },
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image: "",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 25 уровня: «Magnetic Field действует на крипов и постройки» заменено на «Безмолвие от Flux, если рядом с жертвой никого нет»",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Beastmaster
+      {
+        image: "/heroesImages/beastmaster.webp",
+        hero: "Beastmaster",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/beastmaster/summons.png",
+              aspectTitle: "Wild Hunt",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image:
+                      "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
+                    title: "Inner Beast",
+                    changes:
+                      "Дополнительная скорость атаки за существо изменена с 1/2/3/4/5 на 2/3/4/5",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+            secondAspect: {
+              image: "/heroesAbilitiesImages/beastmaster/damage.png",
+              aspectTitle: "Beast Mode",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image:
+                      "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
+                    title: "Inner Beast",
+                    changes:
+                      "Дополнительная скорость атаки при активации изменена с 10/20/30/40/50 на 20/30/40/50",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Rugged",
+                innateAbility: [
+                  "Новая врождённая способность. Пассивная, не улучшается.",
+                  "Увеличивает шанс заблокировать урон от атак существ, не являющихся героями, с 50% до 100%",
+                ],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/beastmaster/beastmaster_wild_axes.png",
+                abilityTitle: "Wild axes",
+                abilityChanges: ["Расход маны увеличен с 50 до 50/55/60/65"],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
+                abilityTitle: "Inner Beast",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Бонус к скорости атаки изменён с 5/10/25/40/55 на 15/30/45/60",
+                ],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/beastmaster/beastmaster_drums_of_slom.png",
+                abilityTitle: "Drums of Slom",
+                abilityChanges: [
+                  "Минимальный интервал увеличен с 0,4 до 0,5 секунды",
+                  "Минимальный интервал увеличен с 0,4 до 0,5 секунды",
+                  "Атаки по постройкам больше не уменьшают интервал ударов",
+                ],
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "",
+                talentChanges: [""],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Bloodseeker
+      {
+        image: "/heroesImages/bloodseeker.webp",
+        hero: "Bloodseeker",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+            secondAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Sanguivore",
+                innateAbility: [
+                  "Теперь даёт полное лечение при добивании союзников",
+                ],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image: "",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 10 уровня: бонус к урону от заклинаний у Bloodrage увеличен с 10% до 15%",
+                  "Талант 15 уровня: бонус к урону от Blood Rite увеличен со 120 до 135",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Bounty Hunter
+      {
+        image: "/heroesImages/bounty_hunter.webp",
+        hero: "Bounty Hunter",
+        baseAttributeChanges: ["Базовый интеллект уменьшен с 22 до 20"],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+            secondAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Big Game Hunter",
+                innateAbility: [
+                  "Дополнительная награда в золоте за участие в убийстве врага, совершившего серию убийств, увеличена с 10% до 20%",
+                ],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/bounty_hunter/bounty_hunter_shuriken_toss.png",
+                abilityTitle: "Shuriken Toss",
+                abilityChanges: [
+                  "Дальность применения с Aghanim's Scepter уменьшена с 700 до 600",
+                ],
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 25 уровня: бонус к урону от Shuriken Toss уменьшен с 275 до 250",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Brewmaster
+      {
+        image: "/heroesImages/brewmaster.webp",
+        hero: "Brewmaster",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+            secondAspect: {
+              image: "",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  firstAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                  secondAbility: {
+                    image: "",
+                    title: "",
+                    changes: "",
+                  },
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Belligerent",
+                innateAbility: [
+                  "Новая врождённая способность. Пассивная, не улучшается.",
+                  "Герой получает +20% к урону от атак на 15 секунд после окончания Primal Split и на 30 секунд после возрождения",
+                ],
+              },
+            ],
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/brewmaster/brewmaster_thunder_clap.png",
+                abilityTitle: "Thunder Clap",
+                abilityChanges: [
+                  "Перезарядка увеличена с 13 до 16/15/14/13 секунд",
+                  "Радиус уменьшен с 400 до 325/350/375/400",
+                ],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/brewmaster/brewmaster_drunken_brawler.png",
+                abilityTitle: "Drunken Brawler",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Броня от бойца земли изменена с 1/3/5/7/9 на 1/3/5/7",
+                  "Сопротивление магии от бойца земли изменено с 4/8/12/16/20% на 5/10/15/20%",
+                  "Уклонение от бойца шторма изменено с 10/15/20/25/30% на 15/20/25/30%",
+                  "Дополнительная скорость передвижения от бойца шторма изменена с 4/6/8/10/12% на 5/7/9/11%",
+                  "Критический урон от бойца огня изменён со 120/135/150/165/180% на 120/140/160/180%",
+                  "Дополнительная скорость атаки от бойца огня изменена с 10/15/20/25/30 на 10/15/20/25",
+                  "Дополнительное сопротивление эффектам от бойца пустоты теперь складывается с другими источниками сопротивления эффектам",
+                  "Дополнительное сопротивление эффектам от бойца пустоты изменено с 4/8/12/16/20% на 5/10/15/20%",
+                  "Замедление атаками от бойца пустоты изменено с 5/10/15/20/25% на 10/15/20/25%",
+                ],
+              },
+            ],
+            talentsChanges: [
+              {
+                image: "",
+                talentChanges: [""],
               },
             ],
           },

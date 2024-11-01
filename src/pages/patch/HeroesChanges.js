@@ -54,7 +54,47 @@ export default function HeroesChanges({ patchNote }) {
                         <ul>
                           {aspectChange.firstAspect.aspectAbility.map(
                             (ability, index) => (
-                              <li key={index}>{ability}</li>
+                              <li key={index}>
+                                {/* First Ability */}
+                                {ability.firstAbility && (
+                                  <div>
+                                    {ability.firstAbility.image && (
+                                      <img
+                                        src={ability.firstAbility.image}
+                                        alt={ability.firstAbility.title || ""}
+                                        width={64}
+                                        height={64}
+                                        className="rounded-sm"
+                                        loading="lazy"
+                                      />
+                                    )}
+                                    <strong>
+                                      {ability.firstAbility.title}
+                                    </strong>
+                                    <p>{ability.firstAbility.changes}</p>
+                                  </div>
+                                )}
+
+                                {/* Second Ability */}
+                                {ability.secondAbility && (
+                                  <div>
+                                    {ability.secondAbility.image && (
+                                      <img
+                                        src={ability.secondAbility.image}
+                                        alt={ability.secondAbility.title || ""}
+                                        width={64}
+                                        height={64}
+                                        className="rounded-sm"
+                                        loading="lazy"
+                                      />
+                                    )}
+                                    <strong>
+                                      {ability.secondAbility.title}
+                                    </strong>
+                                    <p>{ability.secondAbility.changes}</p>
+                                  </div>
+                                )}
+                              </li>
                             )
                           )}
                         </ul>
@@ -78,7 +118,47 @@ export default function HeroesChanges({ patchNote }) {
                         <ul>
                           {aspectChange.secondAspect.aspectAbility.map(
                             (ability, index) => (
-                              <li key={index}>{ability}</li>
+                              <li key={index}>
+                                {/* First Ability */}
+                                {ability.firstAbility && (
+                                  <div>
+                                    {ability.firstAbility.image && (
+                                      <img
+                                        src={ability.firstAbility.image}
+                                        alt={ability.firstAbility.title || ""}
+                                        width={64}
+                                        height={64}
+                                        className="rounded-sm"
+                                        loading="lazy"
+                                      />
+                                    )}
+                                    <strong>
+                                      {ability.firstAbility.title}
+                                    </strong>
+                                    <p>{ability.firstAbility.changes}</p>
+                                  </div>
+                                )}
+
+                                {/* Second Ability */}
+                                {ability.secondAbility && (
+                                  <div>
+                                    {ability.secondAbility.image && (
+                                      <img
+                                        src={ability.secondAbility.image}
+                                        alt={ability.secondAbility.title || ""}
+                                        width={64}
+                                        height={64}
+                                        className="rounded-sm"
+                                        loading="lazy"
+                                      />
+                                    )}
+                                    <strong>
+                                      {ability.secondAbility.title}
+                                    </strong>
+                                    <p>{ability.secondAbility.changes}</p>
+                                  </div>
+                                )}
+                              </li>
                             )
                           )}
                         </ul>
@@ -93,7 +173,6 @@ export default function HeroesChanges({ patchNote }) {
           {heroChange.abilitiesHeroChanges.map(
             (abilityChange, abilityIndex) => (
               <div key={abilityIndex} className="text-lg">
-                <h4>Способности</h4>
                 {/* Innate Changes */}
                 {Array.isArray(abilityChange.innateChanges) &&
                   abilityChange.innateChanges.map((innate, index) => (
@@ -116,7 +195,6 @@ export default function HeroesChanges({ patchNote }) {
                       </ul>
                     </div>
                   ))}
-
                 {/* Abilities Changes */}
                 {Array.isArray(abilityChange.abilitiesChanges) &&
                   abilityChange.abilitiesChanges.map((ability, index) => (
@@ -134,6 +212,28 @@ export default function HeroesChanges({ patchNote }) {
                       <h5>{ability.abilityTitle}</h5>
                       <ul>
                         {ability.abilityChanges.map((change, changeIndex) => (
+                          <li key={changeIndex}>{change}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                {/*Talent Changes*/}
+                {Array.isArray(abilityChange.talentsChanges) &&
+                  abilityChange.talentsChanges.map((talent, index) => (
+                    <div key={talent.id || index}>
+                      {talent.image && (
+                        <img
+                          src={talent.image}
+                          alt="Talent Icon"
+                          width={64}
+                          height={64}
+                          className="rounded-lg"
+                          loading="lazy"
+                        />
+                      )}
+                      <h5>Изменения талантов</h5>
+                      <ul>
+                        {talent.talentChanges.map((change, changeIndex) => (
                           <li key={changeIndex}>{change}</li>
                         ))}
                       </ul>
