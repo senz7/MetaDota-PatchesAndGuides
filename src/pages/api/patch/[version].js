@@ -344,9 +344,11 @@ const patchNotes = {
     ],
 
     heroesChangesTitle: "Изменения героев",
+
     // Abaddon
     heroesChanges: [
       {
+        id: 1,
         image: "/heroesImages/abaddon.webp",
         hero: "Abaddon",
         baseAttributeChanges: ["Способность Font of Avernus удалена из игры"],
@@ -362,6 +364,8 @@ const patchNotes = {
                 ],
               },
             ],
+          },
+          {
             abilitiesChanges: [
               {
                 image:
@@ -372,6 +376,8 @@ const patchNotes = {
                 ],
               },
             ],
+          },
+          {
             talentsChanges: [
               {
                 image: "/heroesAbilitiesImages/talents_icon.png",
@@ -386,50 +392,11 @@ const patchNotes = {
 
       // Anti-Mage
       {
+        id: 2,
         image: "/heroesImages/anti_mage.webp",
         hero: "Anti-Mage",
         baseAttributeChanges: [
           "Базовое восстановление здоровья увеличено с 0,75 до 1",
-        ],
-        aspectsChanges: [
-          {
-            firstAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-            secondAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-          },
         ],
         abilitiesHeroChanges: [
           {
@@ -443,6 +410,8 @@ const patchNotes = {
                 ],
               },
             ],
+          },
+          {
             abilitiesChanges: [
               {
                 image:
@@ -462,6 +431,8 @@ const patchNotes = {
                 ],
               },
             ],
+          },
+          {
             talentsChanges: [
               {
                 image: "/heroesAbilitiesImages/talents_icon.png",
@@ -477,6 +448,7 @@ const patchNotes = {
 
       // Arc warden
       {
+        id: 3,
         image: "/heroesImages/arc_warden.webp",
         hero: "Arc Warden",
         baseAttributeChanges: [""],
@@ -504,6 +476,8 @@ const patchNotes = {
                 },
               ],
             },
+          },
+          {
             secondAspect: {
               image: "/heroesAbilitiesImages/arc_warden/arc_warden.png",
               aspectTitle: "Disorder",
@@ -530,25 +504,6 @@ const patchNotes = {
         ],
         abilitiesHeroChanges: [
           {
-            innateChanges: [
-              {
-                image: "",
-                innateTitle: "",
-                innateAbility: [""],
-              },
-            ],
-            abilitiesChanges: [
-              {
-                image: "",
-                abilityTitle: "",
-                abilityChanges: [""],
-              },
-              {
-                image: "",
-                abilityTitle: "",
-                abilityChanges: [""],
-              },
-            ],
             talentsChanges: [
               {
                 image: "/heroesAbilitiesImages/talents_icon.png",
@@ -563,6 +518,7 @@ const patchNotes = {
 
       // Beastmaster
       {
+        id: 4,
         image: "/heroesImages/beastmaster.webp",
         hero: "Beastmaster",
         baseAttributeChanges: [""],
@@ -573,38 +529,26 @@ const patchNotes = {
               aspectTitle: "Wild Hunt",
               aspectAbility: [
                 {
-                  firstAbility: {
-                    image:
-                      "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
-                    title: "Inner Beast",
-                    changes:
-                      "Дополнительная скорость атаки за существо изменена с 1/2/3/4/5 на 2/3/4/5",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
+                  image:
+                    "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
+                  title: "Inner Beast",
+                  changes:
+                    "Дополнительная скорость атаки за существо изменена с 1/2/3/4/5 на 2/3/4/5",
                 },
               ],
             },
+          },
+          {
             secondAspect: {
               image: "/heroesAbilitiesImages/beastmaster/damage.png",
               aspectTitle: "Beast Mode",
               aspectAbility: [
                 {
-                  firstAbility: {
-                    image:
-                      "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
-                    title: "Inner Beast",
-                    changes:
-                      "Дополнительная скорость атаки при активации изменена с 10/20/30/40/50 на 20/30/40/50",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
+                  image:
+                    "/heroesAbilitiesImages/beastmaster/beastmaster_inner_beast.png",
+                  title: "Inner Beast",
+                  changes:
+                    "Дополнительная скорость атаки при активации изменена с 10/20/30/40/50 на 20/30/40/50",
                 },
               ],
             },
@@ -661,49 +605,10 @@ const patchNotes = {
 
       // Bloodseeker
       {
+        id: 5,
         image: "/heroesImages/bloodseeker.webp",
         hero: "Bloodseeker",
         baseAttributeChanges: [""],
-        aspectsChanges: [
-          {
-            firstAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-            secondAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-          },
-        ],
         abilitiesHeroChanges: [
           {
             innateChanges: [
@@ -715,13 +620,8 @@ const patchNotes = {
                 ],
               },
             ],
-            abilitiesChanges: [
-              {
-                image: "",
-                abilityTitle: "",
-                abilityChanges: [""],
-              },
-            ],
+          },
+          {
             talentsChanges: [
               {
                 image: "/heroesAbilitiesImages/talents_icon.png",
@@ -737,49 +637,10 @@ const patchNotes = {
 
       // Bounty Hunter
       {
+        id: 6,
         image: "/heroesImages/bounty_hunter.webp",
         hero: "Bounty Hunter",
         baseAttributeChanges: ["Базовый интеллект уменьшен с 22 до 20"],
-        aspectsChanges: [
-          {
-            firstAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-            secondAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-          },
-        ],
         abilitiesHeroChanges: [
           {
             innateChanges: [
@@ -815,49 +676,9 @@ const patchNotes = {
 
       // Brewmaster
       {
+        id: 7,
         image: "/heroesImages/brewmaster.webp",
         hero: "Brewmaster",
-        baseAttributeChanges: [""],
-        aspectsChanges: [
-          {
-            firstAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-            secondAspect: {
-              image: "",
-              aspectTitle: "",
-              aspectAbility: [
-                {
-                  firstAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                  secondAbility: {
-                    image: "",
-                    title: "",
-                    changes: "",
-                  },
-                },
-              ],
-            },
-          },
-        ],
         abilitiesHeroChanges: [
           {
             innateChanges: [
@@ -898,9 +719,1404 @@ const patchNotes = {
                 ],
               },
             ],
+          },
+        ],
+      },
+
+      // Bristleback
+      {
+        id: 8,
+        image: "/heroesImages/bristleback.webp",
+        hero: "Bristleback",
+        baseAttributeChanges: ["Базовый урон увеличен на 6"],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/bristleback/no_vision.png",
+              aspectTitle: "Seeing Red (New aspect)",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/bristleback/bristleback_warpath.png",
+                  title: "Warpath",
+                  changes:
+                    "Способность можно активировать, чтобы увеличить её бонус к урону от атак и скорости передвижения на 50% за эффект. В этом состоянии герой видит только в 90-градусном конусе перед собой. Длительность: 4/5/6 секунд. Расход маны: 55/65/75. Перезарядка: 45 секунд.",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Prickly",
+                innateAbility: [
+                  "Новая врождённая способность. Пассивная, не улучшается.",
+                  "Герой наносит врагам позади на 10% больше урона, а его отрицательные эффекты действуют на них на 10% дольше",
+                ],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/bristleback/bristleback_bristleback.png",
+                abilityTitle: "Bristleback",
+                abilityChanges: [
+                  "Число волн игл при применении с Aghanim's Scepter уменьшено с 6 до 5",
+                ],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/bristleback/bristleback_warpath.png",
+
+                abilityTitle: "Warpath",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Урон за эффект изменён с 5/15/20/25 на 15/20/25",
+                  "Бонус к скорости передвижения за эффект изменён с 0/2/3/4% на 2/3/4%",
+                  "Длительность действия эффекта изменена с 12/16/18/20 на 16/18/20 секунд",
+                  "Максимум эффектов изменён с 4/8/10/12 на 8/10/12",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Broodmother
+      {
+        id: 9,
+        image: "/heroesImages/broodmother.webp",
+        hero: "Broodmother",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/broodmother/debuff.png",
+              aspectTitle: "Necrotic Webs",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/broodmother/broodmother_spin_web.png",
+                  title: "Spin Web",
+                  changes:
+                    "Восстановления здоровья врагов теперь снижается, только когда владелец способности находится в той же сети паутин",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Chaos Knight
+
+      {
+        id: 10,
+        image: "/heroesImages/chaos_knight.webp",
+        hero: "Chaos Knight",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/chaos_knight/rng.png",
+              aspectTitle: "Irrationality",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/chaos_knight/chaos_knight_reality_rift.png",
+                  title: "Reality Rift",
+                  changes:
+                    "Шанс в 33% наложить на жертву ничего заменён на шанс в 33% наложить на жертву безмолвие",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Clockwerk
+      {
+        id: 11,
+        image: "/heroesImages/clockwerk.webp",
+        hero: "Clockwerk",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/clockwerk/cooldown.png",
+              aspectTitle: "Expanded Armature",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/clockwerk/rattletrap_power_cogs.png",
+                  title: "Power Cogs",
+                  changes:
+                    "Длительность отталкивания от шестерни уменьшена с 0,8 до 0,6 секунды",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Armor Power",
+                innateAbility: [
+                  "Увеличение урона за единицу брони ослаблено с 0,3% до 0,25%",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Crystal Maiden
+      {
+        id: 12,
+        image: "/heroesImages/crystal_maiden.webp",
+        hero: "Crystal Maiden",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/crystal_maiden/mana.png",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/innate_icon.png",
+                  title: "Blueheart Floe",
+                  changes:
+                    "Теперь также увеличивает усиление восстановления маны от врождённой способности с 50% до 75%",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Dark Seer
+      {
+        id: 13,
+        image: "/heroesImages/dark_seer.webp",
+        hero: "Dark Seer",
+        baseAttributeChanges: ["Базовая сила уменьшена с 22 до 20"],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Mental Fortitude",
+                innateAbility: [
+                  "Интеллект героя не может быть ниже среднего значения между его силой и ловкостью",
+                ],
+              },
+            ],
+          },
+          {
             talentsChanges: [
               {
-                image: "",
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 15 уровня: бонус к радиусу Vacuum уменьшен со 100 до 75",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Dazzle
+      {
+        id: 14,
+        image: "/heroesImages/dazzle.webp",
+        hero: "Dazzle",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/dazzle/armor.png",
+              aspectTitle: "Nothl Boon",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes: "Длительность барьера увеличена с 10 до 12 секунд",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/dazzle/ricochet.png",
+              aspectTitle: "Poison Bloom",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/dazzle/dazzle_poison_touch.png",
+                  title: "Poison Touch",
+                  changes:
+                    "Урон при распространении увеличен с 25/50/75/100 до 30/60/90/120",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Death Prophet
+      {
+        id: 15,
+        image: "/heroesImages/death_prophet.webp",
+        hero: "Death Prophet",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/death_prophet/spirit.png",
+              aspectTitle: "Spirit Collector",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes: "Теперь дух даётся и за смерть владельца аспекта",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/death_prophet/healing.png",
+              aspectTitle: "Mourning Ritual (New aspect)",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes:
+                    "Пассивный эффект. Герой получает 20/30/40/50% урона не сразу, а в течение 5 секунд с интервалами в 1 секунду.",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/death_prophet/death_prophet_carrion_swarm.png",
+                abilityTitle: "Crypt Swarm",
+                abilityChanges: [
+                  "Дальность увеличена с 810 до 900",
+                  "Дальность применения теперь равна дальности нанесения урона",
+                ],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/death_prophet/death_prophet_spirit_siphon.png",
+                abilityTitle: "Spirit Siphon",
+                abilityChanges: [
+                  "Теперь можно применять на Рошана и Терзателей",
+                ],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 15 уровня: «+250 к здоровью» заменено на «+75 к радиусу Silence»",
+                  "Талант 20 уровня: «+50 к урону от Crypt Swarm» заменено на «+400 к здоровью»",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Disruptor
+      {
+        id: 16,
+        image: "/heroesImages/disruptor.wepb",
+        hero: "Disruptor",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/disruptor/fence.png",
+              aspectTitle: "Kinetic Fence",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/disruptor/disruptor_kinetic_fence.png",
+                  title: "Kinetic Fence",
+                  changes: "Дальность применения увеличена с 900 до 1050",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/disruptor/disruptor_glimpse.png",
+                abilityTitle: "Glimpse",
+                abilityChanges: [
+                  "Теперь наносит урон в размере 20/25/30/35% от преодолённого целью расстояния. Максимальный урон по-прежнему составляет 100/160/220/280.",
+                ],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 15 уровня: «+275 к макс. урону от Glimpse» заменено на «+10%/280 к урону от расстояния / максимальному урону у Glimpse»",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Doom
+      {
+        id: 17,
+        image: "/heroesImages/doom.webp",
+        hero: "Doom",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/doom/cooldown.png",
+              aspectTitle: "Impending Doom (New aspect)",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/doom/doom_bringer_doom.png",
+                  title: "Doom",
+                  changes:
+                    "Каждые 6,66 минуты увеличивает длительность Doom на 0,66 секунды (бонус вдвое больше в режиме Turbo). Урон в секунду уменьшен с 30/50/70 до 30/45/60",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Dragon Knight
+      {
+        id: 18,
+        image: "/heroesImages/dragon_knight.webp",
+        hero: "Dragon Knight",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/dragon/dragon_poison.png",
+              aspectTitle: "Corrosive Dragon",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/dragon/dragon_knight_dragon_blood.png",
+                  title: "Wyrm's Wrath",
+                  changes:
+                    "Снижение брони от яда уменьшено с 1/2/3/4 до 0/1/2/3",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Drow Ranger
+      {
+        id: 19,
+        image: "/heroesImages/drow_ranger.webp",
+        hero: "Drow Ranger",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/drow/multi_arrow.png",
+              aspectTitle: "Sidestep",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/drow/drow_ranger_multishot.png",
+                  title: "Multishot",
+                  changes:
+                    "Замедление передвижения владельца уменьшено с 40% до 25%",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/drow/drow_ranger_frost_arrows.png",
+                abilityTitle: "Frost Arrows",
+                abilityChanges: [
+                  "Дополнительный урон увеличен с 6/12/18/24 до 10/15/20/25",
+                ],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 15 уровня: «+20% к вампиризму» заменено на «+75 к дальности атаки»",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Earth Spirit
+      {
+        id: 20,
+        image: "/heroesImages/earth_spirit.webp",
+        hero: "Earth Spirit",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/earth/spinning.png",
+              aspectTitle: "Ready to Roll (New aspect)",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/earth/earth_spirit_rolling_boulder.png",
+                  title: "Rolling Boulder",
+                  changes:
+                    "Если прокатиться по союзному герою, владелец способности даст ему +15/20/25/30% к скорости передвижения на 4 секунды, покатится быстрее и дальше, а оглушение будет дольше. Скорость валуна с союзником: 1900. Множитель дальности с союзником: 2,5. Дополнительное оглушение с союзником: 0,3/0,5/0,7/0,9 секунды",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/earth/earth_spirit_rolling_boulder.png",
+                abilityTitle: "Rolling Boulder",
+                abilityChanges: ["Урон увеличен с 60 до 60/70/80/90"],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/earth/earth_spirit_magnetize.png",
+                abilityTitle: "Magnetize",
+                abilityChanges: [
+                  "Урон в секунду увеличен с 40/80/120 до 45/85/125",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Earthshaker
+      {
+        id: 21,
+        image: "/heroesImages/earthshaker.webp",
+        hero: "Earthshaker",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/earthshaker/movement.png",
+              aspectTitle: "Slugger",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes:
+                    "Теперь тела убитых врагов отлетают при смерти от любых способностей героя, не только от атаки с эффектом Enchant Totem",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Spirit Cairn (New aspect)",
+                innateAbility: [
+                  "Когда владелец этой способности умирает, на его месте остаётся непроходимая борозда радиусом 75, вокруг которой он продолжает получать опыт и обзор.",
+                ],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/earthshaker/earthshaker_aftershock.png",
+                abilityTitle: "Aftershock",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Урон изменён с 35/70/100/130/160 на 70/100/130/160",
+                  "Длительность изменена с 0,5/1/1,1/1,2/1,3 на 1/1,1/1,2/1,3 секунды",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Elder Titan
+      {
+        id: 22,
+        image: "/heroesImages/elder_titan.webp",
+        hero: "Elder Titan",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/elder_titan/damage.png",
+              aspectTitle: "Momentum",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes:
+                    "Доля скорости передвижения, добавляющаяся к скорости атаки, уменьшена с 30% до 25%",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Tip the Scales (New aspect)",
+                innateAbility: [
+                  "Союзные крипы и постройки, находящиеся под эффектом укрепления или предмета Roshan's Banner, наносят на 100% больше урона",
+                ],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/elder_titan/elder_titan_ancestral_spirit.png",
+                abilityTitle: "Astral Spirit",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Бонус к скорости за героя изменён с 4/5/6/7/8% на 5/6/7/8%",
+                  "Бонус к урону за крипа изменён с 3/3/7/11/15 на 3/7/11/15",
+                  "Бонус к урону за героя изменён с 10/17/38/59/80 на 17/38/59/80",
+                  "Бонус к броне за героя изменён с 1/1,5/3/4,5/6 на 1,5/3/4,5/6",
+                  "Расход маны изменён с 70/80/90/100/110 на 80/90/100/110",
+                  "Перезарядка изменена с 25/23/21/19/17 на 23/21/19/17 секунд",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Ember Spirit
+      {
+        id: 23,
+        image: "/heroesImages/ember_spirit.webp",
+        hero: "Ember Spirit",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/ember_spirit/fist.png",
+              aspectTitle: "Double Impact",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/ember_spirit/ember_spirit_sleight_of_fist.png",
+                  title: "Sleight of Fist",
+                  changes: "Снижение урона второй атаки усилено с 40% до 50%",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle:
+                  "Immolation (New aspect, improves with Fire Remnant)",
+                innateAbility: [
+                  "Герой наносит 10/20/30/40 урона в секунду всем врагам в радиусе 175",
+                  "Улучшается с Aghanim's Shard. Увеличивает урон на 10, а радиус — на 175. Копии от способности Fire Remnant получают такой же эффект горения.",
+                ],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/ember_spirit/ember_spirit_searing_chains.png",
+                abilityTitle: "Searing Chains",
+                abilityChanges: [
+                  "Расход маны увеличен с 80/90/100/110 до 95/100/105/110",
+                ],
+              },
+              {
+                image:
+                  "/heroesAbilitiesImages/ember_spirit/ember_spirit_flame_guard.png",
+                abilityTitle: "Flame Guard",
+                abilityChanges: [
+                  "Больше не является врождённой способностью и не имеет пассивного компонента",
+                  "Длительность изменена с 10/12/14/16/18 на 12/14/16/18 секунд",
+                  "Урон в секунду изменён с 15/25/35/45/55 на 20/30/40/50",
+                  "Здоровье магического барьера изменено с 30/60/135/210/285 на 60/135/210/285",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Enchantress
+      {
+        id: 24,
+        image: "/heroesImages/enchantress.webp",
+        hero: "Enchantress",
+        baseAttributeChanges: ["Способность Forest Freebie удалена из игры"],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Rabble-Rouser (New aspect)",
+                innateAbility: [
+                  "Все нейтральные крипы из лагерей наносят больше урона вражеским героям. Бонус к урону составляет 10% + 3% за каждый уровень владельца способности.",
+                ],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/enchantress/enchantress_enchant.png",
+                abilityTitle: "Enchant",
+                abilityChanges: [
+                  "Больше не гарантирует выпадение нейтрального жетона",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Enigma
+      {
+        id: 25,
+        image: "/heroesImages/enigma.webp",
+        hero: "Enigma",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/enigma/slow.png",
+              aspectTitle: "Event Horizon",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes:
+                    "Замедление передвижения изменено с 15% на 9/11/13/15%. Теперь улучшается вместе с Black Hole.",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Gravity Well",
+                innateAbility: [
+                  "Снижение получаемого урона изменено с 15% на 9/11/13/15%. Теперь улучшается вместе с Black Hole.",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Faceless Void
+      {
+        id: 26,
+        image: "/heroesImages/faceless_void.webp",
+        hero: "Faceless Void",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/faceless_void/area_of_effect.png",
+              aspectTitle:
+                "Chronosphere (Aspect name changed from Temporal Impunity to Chronosphere)",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/faceless_void/faceless_void_time_walk.png",
+                  title: "Time Walk",
+                  changes:
+                    "Применение этой способности больше не даёт недолгую защиту от любого урона",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 25 уровня: бонус к радиусу Time Zone увеличен со 140 до 200",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Grimstroke
+      {
+        id: 27,
+        image: "/heroesImages/grimstroke.webp",
+        hero: "Grimstroke",
+
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/grimstroke/brush.png",
+              aspectTitle: "Fine Art",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/grimstroke/grimstroke_dark_artistry.png",
+                  title: "Stroke of Fate",
+                  changes:
+                    "Дополнительный урон за врага увеличен с 20/35/50/65 до 20/40/60/80",
+                },
+              ],
+            },
+          },
+        ],
+      },
+
+      // Gyrocopter
+      {
+        id: 28,
+        image: "/heroesImages/gyrocopter.webp",
+        hero: "Gyrocopter",
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/gyrocopter/gyrocopter_call_down.png",
+                abilityTitle: "Call Down",
+                abilityChanges: ["Урон увеличен с 250/400/550 до 250/425/600"],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Hoodwink
+      {
+        id: 29,
+        image: "/heroesImages/hoodwink.webp",
+        hero: "Hoodwink",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/hoodwink/range.png",
+              aspectTitle: "Go Nuts",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/hoodwink/hoodwink_scurry.png",
+                  title: "Scurry",
+                  changes:
+                    "Дополнительная дальность заклинаний увеличена с 50/100/150/200 до 100/150/200/250. Дополнительная дальность атаки увеличена с 50/100/150/200 до 100/150/200/250",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/hoodwink/hoodwink_acorn_shot.png",
+                abilityTitle: "Acorn Shot",
+                abilityChanges: [
+                  "Расход маны увеличен с 70/75/80/85 до 85/90/95/100",
+                ],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 15 уровня: бонус к числу отскоков у Acorn Shot уменьшен с 2 до 1",
+                  "Талант 20 уровня: снижение брони от атак ослаблено с 4 до 3",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Huskar
+      {
+        id: 30,
+        image: "/heroesImages/huskar.webp",
+        hero: "Huskar",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/huskar/damage.png",
+              aspectTitle: "Incendiary (New aspect)",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/huskar/huskar_burning_spear.png",
+                  title: "Burning Spear",
+                  changes:
+                    "Копья также раз в секунду наносят урон в размере 1% от максимального здоровья жертвы. Вместо 4% текущего здоровья способность расходует 4% максимального. Уменьшает длительность горения с 9 до 6 секунд.",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 25 уровня: бонус к длительности Burning Spear увеличен с 4 до 6 секунд",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Jakiro
+      {
+        id: 31,
+        image: "/heroesImages/jakiro.webp",
+        hero: "Jakiro",
+        abilitiesHeroChanges: [
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 10 уровня: бонус к дальности атаки уменьшен с 200 до 150",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Juggernaut
+      {
+        id: 32,
+        image: "/heroesImages/juggernaut.webp",
+        hero: "Juggernaut",
+        abilitiesHeroChanges: [
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 10 уровня: «+150 к радиусу лечения от Healing Ward» заменено на «+4% к урону от Duelist»",
+                  "Талант 10 уровня: «+10% к критическому урону от Blade Dance» заменено на «–10 сек. перезарядки Healing Ward»",
+                  "Талант 15 уровня: бонус к скорости передвижения во время Blade Fury увеличен с 30 до 40",
+                  "Талант 15 уровня: «–20 сек. перезарядки Healing Ward» заменено на «+1% к макс. здоровью в секунду у Healing Ward»",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Kunkka
+      {
+        id: 33,
+        image: "/heroesImages/kunkka.webp",
+        hero: "Kunkka",
+        baseAttributeChanges: ["Минимальный урон увеличен на 4"],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/kunkka/kunkka_admirals_rum.png",
+                abilityTitle: "Admiral's Rum (New aspect)",
+                abilityChanges: [
+                  "Если урон от героя, постройки или Рошана снижает здоровье владельца способности до 65%, он на 10 секунд окатывает себя адмиральским ромом, отчего передвигается быстрее на 10% и получает 20% урона с задержкой. Отложенный урон равномерно наносится в течение 10 секунд после окончания эффекта. Эффекты от разных источников рома складываются. Перезарядка: 60 секунд.",
+                ],
+              },
+              {
+                image: "/heroesAbilitiesImages/kunkka/kunkka_torrent.png",
+                abilityTitle: "Torrent",
+                abilityChanges: [
+                  "Радиус увеличен с 225 до 250",
+                  "Расход маны уменьшен со 100 до 90",
+                ],
+              },
+              {
+                image: "/heroesAbilitiesImages/kunkka/kunkka_tidebringer.png",
+                abilityTitle: "Tidebringer",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Дальность прорубания изменена с 500/650/800/950/1100 на 650/800/950/1100",
+                  "Дополнительный урон изменён с 10/30/60/90/120 на 30/60/90/120",
+                  "Перезарядка изменена с 16/13/10/7/4 на 13/10/7/4 секунды",
+                ],
+              },
+              {
+                image: "/heroesAbilitiesImages/kunkka/kunkka_ghostship.png",
+                abilityTitle: "Ghostship",
+                abilityChanges: [
+                  "Корабль окатывает всех задетых союзников усиленным ромом, который ускоряет их на 15% и откладывает 35% полученного урона.",
+                  "Добавлено улучшение от Aghanim’s Scepter. Призывает флот из 2 призрачных кораблей, которые разбиваются в указанной точке с интервалом в 2,5 секунды. Каждый корабль даёт три залпа из четырёх пушек с каждого борта, нанося 40% урона от способности врагам, сквозь которых пролетели ядра. Каждому врагу может нанести урон только одно ядро. Радиус ядра: 100. Скорость полёта ядра: 1400.",
+                ],
+              },
+              {
+                image: "/heroesAbilitiesImages/kunkka/kunkka_torrent_storm.png",
+                abilityTitle: "Torrent Storm",
+                abilityChanges: ["Способность удалена из игры"],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [
+                  "Талант 25 уровня: «Флот призрачных кораблей» заменено на «+100 к радиусу способностей»",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Legion Commander
+      {
+        id: 34,
+        image: "/heroesImages/legion_commander.webp",
+        hero: "Legion Commander",
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "Outfight Them! (New aspect)",
+                innateAbility: [
+                  "Если атаковать вражеского героя, уровень которого превышает уровень владельца способности, восстановление здоровья, вампиризм и получаемое лечение увеличатся на 50%. Длительность: 4 секунды. Срабатывает при каждой атаке по героям максимального уровня.",
+                ],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/legion_commander/legion_commander_moment_of_courage.png",
+                abilityTitle: "Moment of Courage",
+                abilityChanges: [
+                  "Больше не является врождённой способностью",
+                  "Вампиризм изменён с 40/60/70/80/90% на 55/65/75/85%",
+                  "Перезарядка изменена с 2,3/1,9/1,5/1,1/0,7 на 1,9/1,5/1,1/0,7 секунды",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Leshrac
+      {
+        id: 35,
+        image: "/heroesImages/leshrac.webp",
+        hero: "Leshrac",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/leshrac/nuke.png",
+              aspectTitle: "Misanthropy",
+              aspectAbility: [
+                {
+                  image:
+                    "/heroesAbilitiesImages/leshrac/leshrac_diabolic_edict.png",
+                  title: "Diabolic Edict",
+                  changes:
+                    "Длительность уменьшена с 7 до 6 секунд (суммарный урон не изменился)",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/leshrac/leshrac_split_earth",
+                abilityTitle: "Split Earth",
+                abilityChanges: [
+                  "Урон уменьшен со 120/180/240/300 до 115/170/225/280",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      // Lifestealer
+      {
+        id: 36,
+        image: "/heroesImages/life_stealer.webp",
+        hero: "Lifestealer",
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/life_stealer/lifestealer_rage.png",
+              aspectTitle:
+                "Rage (Aspect name changed from Corpse Eater to Rage",
+              aspectAbility: [
+                {
+                  image: "",
+                  title: "",
+                  changes:
+                    "Больше не увеличивает максимальное здоровье за убийство крипов и героев (эта особенность стала частью врождённой способности Feast)",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            abilitiesChanges: [
+              {
+                image:
+                  "/heroesAbilitiesImages/life_stealer/life_stealer_feast.png",
+                abilityTitle: "Feast",
+                abilityChanges: [
+                  "Помимо прежних эффектов, теперь герой получает +1 к максимальному здоровью за каждого убитого крипа и +15 — за каждого убитого героя",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: 4,
+        image: "/heroesImages/",
+        hero: "",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [""],
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: 4,
+        image: "/heroesImages/",
+        hero: "",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [""],
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: 4,
+        image: "/heroesImages/",
+        hero: "",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [""],
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: 4,
+        image: "/heroesImages/",
+        hero: "",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
                 talentChanges: [""],
               },
             ],
@@ -1117,3 +2333,79 @@ export default function handler(req, res) {
 
   res.status(200).json(patchNote);
 }
+
+// Образ героя
+
+/* {
+        id: 4,
+        image: "/heroesImages/",
+        hero: "",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [""],
+              },
+            ],
+          },
+        ],
+      },
+*/

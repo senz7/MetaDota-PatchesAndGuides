@@ -26,9 +26,14 @@ export default function HeroesChanges({ patchNote }) {
           </div>
 
           {/* Base Attributes */}
-          {heroChange.baseAttributeChanges.map((baseAttribute, index) => (
-            <div key={index}>{baseAttribute}</div>
-          ))}
+          {heroChange.baseAttributeChanges &&
+            heroChange.baseAttributeChanges.length > 0 && (
+              <div>
+                {heroChange.baseAttributeChanges.map((baseAttribute, index) => (
+                  <div key={index}>{baseAttribute}</div>
+                ))}
+              </div>
+            )}
 
           {/* Aspects Changes */}
           {heroChange.aspectsChanges &&
@@ -55,45 +60,18 @@ export default function HeroesChanges({ patchNote }) {
                           {aspectChange.firstAspect.aspectAbility.map(
                             (ability, index) => (
                               <li key={index}>
-                                {/* First Ability */}
-                                {ability.firstAbility && (
-                                  <div>
-                                    {ability.firstAbility.image && (
-                                      <img
-                                        src={ability.firstAbility.image}
-                                        alt={ability.firstAbility.title || ""}
-                                        width={64}
-                                        height={64}
-                                        className="rounded-sm"
-                                        loading="lazy"
-                                      />
-                                    )}
-                                    <strong>
-                                      {ability.firstAbility.title}
-                                    </strong>
-                                    <p>{ability.firstAbility.changes}</p>
-                                  </div>
+                                {ability.image && (
+                                  <img
+                                    src={ability.image}
+                                    alt={ability.title || ""}
+                                    width={64}
+                                    height={64}
+                                    className="rounded-sm"
+                                    loading="lazy"
+                                  />
                                 )}
-
-                                {/* Second Ability */}
-                                {ability.secondAbility && (
-                                  <div>
-                                    {ability.secondAbility.image && (
-                                      <img
-                                        src={ability.secondAbility.image}
-                                        alt={ability.secondAbility.title || ""}
-                                        width={64}
-                                        height={64}
-                                        className="rounded-sm"
-                                        loading="lazy"
-                                      />
-                                    )}
-                                    <strong>
-                                      {ability.secondAbility.title}
-                                    </strong>
-                                    <p>{ability.secondAbility.changes}</p>
-                                  </div>
-                                )}
+                                <strong>{ability.title}</strong>
+                                <p>{ability.changes}</p>
                               </li>
                             )
                           )}
@@ -116,51 +94,28 @@ export default function HeroesChanges({ patchNote }) {
                         )}
                         <h4>{aspectChange.secondAspect.aspectTitle}</h4>
                         <ul>
-                          {aspectChange.secondAspect.aspectAbility.map(
-                            (ability, index) => (
-                              <li key={index}>
-                                {/* First Ability */}
-                                {ability.firstAbility && (
-                                  <div>
-                                    {ability.firstAbility.image && (
-                                      <img
-                                        src={ability.firstAbility.image}
-                                        alt={ability.firstAbility.title || ""}
-                                        width={64}
-                                        height={64}
-                                        className="rounded-sm"
-                                        loading="lazy"
-                                      />
-                                    )}
-                                    <strong>
-                                      {ability.firstAbility.title}
-                                    </strong>
-                                    <p>{ability.firstAbility.changes}</p>
-                                  </div>
-                                )}
-
-                                {/* Second Ability */}
-                                {ability.secondAbility && (
-                                  <div>
-                                    {ability.secondAbility.image && (
-                                      <img
-                                        src={ability.secondAbility.image}
-                                        alt={ability.secondAbility.title || ""}
-                                        width={64}
-                                        height={64}
-                                        className="rounded-sm"
-                                        loading="lazy"
-                                      />
-                                    )}
-                                    <strong>
-                                      {ability.secondAbility.title}
-                                    </strong>
-                                    <p>{ability.secondAbility.changes}</p>
-                                  </div>
-                                )}
-                              </li>
-                            )
-                          )}
+                          {aspectChange?.firstAspect?.aspectAbility &&
+                            Array.isArray(
+                              aspectChange.firstAspect.aspectAbility
+                            ) &&
+                            aspectChange.firstAspect.aspectAbility.map(
+                              (ability, index) => (
+                                <li key={index}>
+                                  {ability.image && (
+                                    <img
+                                      src={ability.image}
+                                      alt={ability.title || ""}
+                                      width={64}
+                                      height={64}
+                                      className="rounded-sm"
+                                      loading="lazy"
+                                    />
+                                  )}
+                                  <strong>{ability.title}</strong>
+                                  <p>{ability.changes}</p>
+                                </li>
+                              )
+                            )}
                         </ul>
                       </div>
                     )}
@@ -170,78 +125,109 @@ export default function HeroesChanges({ patchNote }) {
             )}
 
           {/* Abilities Changes */}
-          {heroChange.abilitiesHeroChanges.map(
-            (abilityChange, abilityIndex) => (
-              <div key={abilityIndex} className="text-lg">
-                {/* Innate Changes */}
-                {Array.isArray(abilityChange.innateChanges) &&
-                  abilityChange.innateChanges.map((innate, index) => (
-                    <div key={innate.id || index}>
-                      {innate.image && (
-                        <img
-                          src={innate.image}
-                          alt={innate.innateTitle}
-                          width={64}
-                          height={64}
-                          className="rounded-lg"
-                          loading="lazy"
-                        />
-                      )}
-                      <h5>{innate.innateTitle}</h5>
-                      <ul>
-                        {innate.innateAbility.map((ability, index) => (
-                          <li key={index}>{ability}</li>
-                        ))}
-                      </ul>
+          {Array.isArray(heroChange.abilitiesHeroChanges) &&
+            heroChange.abilitiesHeroChanges.length > 0 && (
+              <div>
+                {heroChange.abilitiesHeroChanges.map(
+                  (abilityChange, abilityIndex) => (
+                    <div key={abilityIndex} className="text-lg">
+                      {/* Innate Changes */}
+                      {Array.isArray(abilityChange.innateChanges) &&
+                        abilityChange.innateChanges.length > 0 && (
+                          <div>
+                            {abilityChange.innateChanges.map(
+                              (innate, index) => (
+                                <div key={innate.id || index}>
+                                  {innate.image && (
+                                    <img
+                                      src={innate.image}
+                                      alt={innate.innateTitle}
+                                      width={64}
+                                      height={64}
+                                      className="rounded-lg"
+                                      loading="lazy"
+                                    />
+                                  )}
+                                  <h5>{innate.innateTitle}</h5>
+                                  <ul>
+                                    {innate.innateAbility.map(
+                                      (ability, index) => (
+                                        <li key={index}>{ability}</li>
+                                      )
+                                    )}
+                                  </ul>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        )}
+
+                      {/* Abilities Changes */}
+                      {Array.isArray(abilityChange.abilitiesChanges) &&
+                        abilityChange.abilitiesChanges.length > 0 && (
+                          <div>
+                            {abilityChange.abilitiesChanges.map(
+                              (ability, index) => (
+                                <div key={ability.id || index}>
+                                  {ability.image && (
+                                    <img
+                                      src={ability.image}
+                                      alt={ability.abilityTitle}
+                                      width={64}
+                                      height={64}
+                                      className="rounded-lg"
+                                      loading="lazy"
+                                    />
+                                  )}
+                                  <h5>{ability.abilityTitle}</h5>
+                                  <ul>
+                                    {ability.abilityChanges.map(
+                                      (change, changeIndex) => (
+                                        <li key={changeIndex}>{change}</li>
+                                      )
+                                    )}
+                                  </ul>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        )}
+
+                      {/* Talent Changes */}
+                      {Array.isArray(abilityChange.talentsChanges) &&
+                        abilityChange.talentsChanges.length > 0 && (
+                          <div>
+                            {abilityChange.talentsChanges.map(
+                              (talent, index) => (
+                                <div key={talent.id || index}>
+                                  {talent.image && (
+                                    <img
+                                      src={talent.image}
+                                      alt="Talent Icon"
+                                      width={64}
+                                      height={64}
+                                      className="rounded-lg"
+                                      loading="lazy"
+                                    />
+                                  )}
+                                  <h5>Изменения талантов</h5>
+                                  <ul>
+                                    {talent.talentChanges.map(
+                                      (change, changeIndex) => (
+                                        <li key={changeIndex}>{change}</li>
+                                      )
+                                    )}
+                                  </ul>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        )}
                     </div>
-                  ))}
-                {/* Abilities Changes */}
-                {Array.isArray(abilityChange.abilitiesChanges) &&
-                  abilityChange.abilitiesChanges.map((ability, index) => (
-                    <div key={ability.id || index}>
-                      {ability.image && (
-                        <img
-                          src={ability.image}
-                          alt={ability.abilityTitle}
-                          width={64}
-                          height={64}
-                          className="rounded-lg"
-                          loading="lazy"
-                        />
-                      )}
-                      <h5>{ability.abilityTitle}</h5>
-                      <ul>
-                        {ability.abilityChanges.map((change, changeIndex) => (
-                          <li key={changeIndex}>{change}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                {/*Talent Changes*/}
-                {Array.isArray(abilityChange.talentsChanges) &&
-                  abilityChange.talentsChanges.map((talent, index) => (
-                    <div key={talent.id || index}>
-                      {talent.image && (
-                        <img
-                          src={talent.image}
-                          alt="Talent Icon"
-                          width={64}
-                          height={64}
-                          className="rounded-lg"
-                          loading="lazy"
-                        />
-                      )}
-                      <h5>Изменения талантов</h5>
-                      <ul>
-                        {talent.talentChanges.map((change, changeIndex) => (
-                          <li key={changeIndex}>{change}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                  )
+                )}
               </div>
-            )
-          )}
+            )}
         </div>
       ))}
     </>
