@@ -82,7 +82,6 @@ export default function PatchPage() {
               {patchNote.title}
             </p>
           </div>
-
           <div className="p-6 pt-0">
             <GeneralChanges patchNote={patchNote} />
             <NeutralCripsChanges patchNote={patchNote} />
@@ -95,3 +94,79 @@ export default function PatchPage() {
     </div>
   );
 }
+
+// Образ героя
+
+/* {
+        id: 4,
+        image: "/heroesImages/",
+        hero: "",
+        baseAttributeChanges: [""],
+        aspectsChanges: [
+          {
+            firstAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+          {
+            secondAspect: {
+              image: "/heroesAbilitiesImages/",
+              aspectTitle: "",
+              aspectAbility: [
+                {
+                  image: "/heroesAbilitiesImages/",
+                  title: "",
+                  changes: "",
+                },
+              ],
+            },
+          },
+        ],
+        abilitiesHeroChanges: [
+          {
+            innateChanges: [
+              {
+                image: "/heroesAbilitiesImages/innate_icon.png",
+                innateTitle: "",
+                innateAbility: [""],
+              },
+            ],
+          },
+          {
+            abilitiesChanges: [
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+              {
+                image: "/heroesAbilitiesImages/",
+                abilityTitle: "",
+                abilityChanges: [""],
+              },
+            ],
+          },
+          {
+            talentsChanges: [
+              {
+                image: "/heroesAbilitiesImages/talents_icon.png",
+                talentChanges: [""],
+              },
+            ],
+          },
+        ],
+      },
+*/

@@ -42,63 +42,23 @@ export default function HeroesChanges({ patchNote }) {
               <div className="list-disc pl-5 space-y-1">
                 {heroChange.aspectsChanges.map((aspectChange, aspectIndex) => (
                   <div key={aspectIndex} className="text-lg">
-                    {/* First Aspect */}
-                    {aspectChange.firstAspect && (
-                      <div>
-                        {aspectChange.firstAspect.image && (
-                          <img
-                            src={aspectChange.firstAspect.image}
-                            alt={aspectChange.firstAspect.aspectTitle || ""}
-                            width={64}
-                            height={64}
-                            className="rounded-lg"
-                            loading="lazy"
-                          />
-                        )}
-                        <h4>{aspectChange.firstAspect.aspectTitle}</h4>
-                        <ul>
-                          {aspectChange.firstAspect.aspectAbility.map(
-                            (ability, index) => (
-                              <li key={index}>
-                                {ability.image && (
-                                  <img
-                                    src={ability.image}
-                                    alt={ability.title || ""}
-                                    width={64}
-                                    height={64}
-                                    className="rounded-sm"
-                                    loading="lazy"
-                                  />
-                                )}
-                                <strong>{ability.title}</strong>
-                                <p>{ability.changes}</p>
-                              </li>
-                            )
+                    {/* Первый аспект */}
+                    {aspectChange.firstAspect &&
+                      Array.isArray(aspectChange.firstAspect.aspectAbility) && (
+                        <div>
+                          {aspectChange.firstAspect.image && (
+                            <img
+                              src={aspectChange.firstAspect.image}
+                              alt={aspectChange.firstAspect.aspectTitle || ""}
+                              width={64}
+                              height={64}
+                              className="rounded-lg"
+                              loading="lazy"
+                            />
                           )}
-                        </ul>
-                      </div>
-                    )}
-
-                    {/* Second Aspect */}
-                    {aspectChange.secondAspect && (
-                      <div>
-                        {aspectChange.secondAspect.image && (
-                          <img
-                            src={aspectChange.secondAspect.image}
-                            alt={aspectChange.secondAspect.aspectTitle || ""}
-                            width={64}
-                            height={64}
-                            className="rounded-lg"
-                            loading="lazy"
-                          />
-                        )}
-                        <h4>{aspectChange.secondAspect.aspectTitle}</h4>
-                        <ul>
-                          {aspectChange?.firstAspect?.aspectAbility &&
-                            Array.isArray(
-                              aspectChange.firstAspect.aspectAbility
-                            ) &&
-                            aspectChange.firstAspect.aspectAbility.map(
+                          <h4>{aspectChange.firstAspect.aspectTitle}</h4>
+                          <ul>
+                            {aspectChange.firstAspect.aspectAbility.map(
                               (ability, index) => (
                                 <li key={index}>
                                   {ability.image && (
@@ -116,9 +76,49 @@ export default function HeroesChanges({ patchNote }) {
                                 </li>
                               )
                             )}
-                        </ul>
-                      </div>
-                    )}
+                          </ul>
+                        </div>
+                      )}
+
+                    {/* Второй аспект */}
+                    {aspectChange.secondAspect &&
+                      Array.isArray(
+                        aspectChange.secondAspect.aspectAbility
+                      ) && (
+                        <div>
+                          {aspectChange.secondAspect.image && (
+                            <img
+                              src={aspectChange.secondAspect.image}
+                              alt={aspectChange.secondAspect.aspectTitle || ""}
+                              width={64}
+                              height={64}
+                              className="rounded-lg"
+                              loading="lazy"
+                            />
+                          )}
+                          <h4>{aspectChange.secondAspect.aspectTitle}</h4>
+                          <ul>
+                            {aspectChange.secondAspect.aspectAbility.map(
+                              (ability, index) => (
+                                <li key={index}>
+                                  {ability.image && (
+                                    <img
+                                      src={ability.image}
+                                      alt={ability.title || ""}
+                                      width={64}
+                                      height={64}
+                                      className="rounded-sm"
+                                      loading="lazy"
+                                    />
+                                  )}
+                                  <strong>{ability.title}</strong>
+                                  <p>{ability.changes}</p>
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      )}
                   </div>
                 ))}
               </div>
